@@ -2,11 +2,13 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js",
-    "seed": "node prisma/seed.js"
-  },
+ "scripts": {
+  "start": "node index.js",              // 👈 For production (Render)
+  "dev": "nodemon index.js",             // 👈 For local development
+  "seed": "node prisma/seed.js",         // 👈 Seed script
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+
   "author": "",
   "license": "ISC",
   "description": "",
